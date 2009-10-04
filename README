@@ -1,0 +1,24 @@
+This was done during the DevHouseBerlin (http://wiki.upstream-berlin.com/index.php/DevHouseBerlin2).
+
+I wrote this to play around with MacRuby (macruby.org) and Cocoa and provide this here for your entertainment.
+
+
+
+== Requirements == 
+It requires MacRuby 0.4 for OS X 10.5 or MacRuby 0.5 for OS X 10.6
+
+== What it does ==
+Allow you to choose one project from an Integrity (http://integrityapp.com) CI server for which you want to get updates of the build status
+
+== Know Issues ==
+* No error handling
+* Lack of tests
+* Might not work with future builds of MacRuby
+* Pref changes are not picked up correctly
+
+== TODO ==
+* Do Testing
+* Show colored menu item instead of text as status indicator
+* Support display of multiple projects with status in the menu
+* Hide unused menu
+
