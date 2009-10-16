@@ -17,7 +17,7 @@ class ConnectionDelegate
                                            options:NSXMLDocumentTidyHTML,
                                            error:nil)
 	  if doc
-		get_status(doc)
+			get_status(doc)
 	  end
 	  @receivedData = NSMutableData.new
 	end

@@ -5,13 +5,17 @@
 #  Created by Thilo on 13.7.09.
 #  Copyright (c) 2009 Upstream Agile GmbH. All rights reserved.
 #
+framework 'AppKit'
+
 
 class ProjectsListDelegate
 	attr_reader :available_projects
 	attr_writer :settings
+	attr_writer :menu
 		
 	def awakeFromNib
 		@available_projects = @settings["AvailableProjects"] || []
+		initialize_menu_items
 	end
 	
 	def numberOfRowsInTableView(tableView)
@@ -53,12 +57,34 @@ class ProjectsListDelegate
     NSLog("add #{name}")
     update_selected_projects
     NSLog("Saved #{@settings["SelectedProjects"].inspect}")
+		add_menu_item name
   end
+	
+	
+	def initialize_menu_items
+		selected_projects.each do |name| 
+			add_menu_item(name)
+		end
+	end
+	
+	def add_menu_item(name)
+		project_item = NSMenuItem.new
+		project_item.title = name
+		project_item.state = NSOnState
+		@menu.addItem(project_item)
+	end
+	
+	def remove_menu_item(name)
+		p 'remove menu item'
+		project_item_index = @menu.indexOfItemWithTitle(name)
+		@menu.removeItemAtIndex(project_item_index)
+	end
   
   def remove_selected_project(name)
     NSLog("remove #{name}")
     selected_projects.delete(name)
-		update_selected_projects    
+		update_selected_projects
+		remove_menu_item(name)
 		NSLog("Saved #{NSUserDefaults.standardUserDefaults.objectForKey("SelectedProjects")}")
   end
 	

@@ -12,12 +12,12 @@ class StatusIndicator
 	def initialize
 	  bar = NSStatusBar.systemStatusBar
 	  @theItem = bar.statusItemWithLength NSVariableStatusItemLength
-      @theItem.setTitle "Loading..."
 	  @theItem.setHighlightMode true
 	end
 	
 	def awakeFromNib
 	  @theItem.setMenu @menu #Set Menu. This should be posible in IB?
+		@theItem.setTitle "Loading..."
 	end
 	
 	def change_status(state)
