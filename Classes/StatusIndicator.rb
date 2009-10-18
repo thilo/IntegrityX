@@ -23,4 +23,14 @@ class StatusIndicator
 	def change_status(state)
 	 @theItem.setTitle(state)
 	end
+	
+	def change_status(state, forProject:name)
+		p "change status for #{name} to #{state}"
+		project_item_index = @menu.indexOfItemWithTitle(name)
+		menu_item = @menu.itemAtIndex(project_item_index)
+		if menu_item
+			menu_item.state = state.include?('success') ? NSOnState : NSOffState
+		end
+	end
+	
 end
