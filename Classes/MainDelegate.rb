@@ -34,8 +34,9 @@ class MainDelegate
 			url = NSURL.URLWithString server_url_part + '/' + project_url_part
 			request = NSURLRequest.requestWithURL url
 			@connection = NSURLConnection.connectionWithRequest(request, delegate: @connection_delegate)
+			@status_indicator.hide_no_project
 		else
-			@status_indicator.change_status('No Projects')
+			@status_indicator.show_no_project
 		end
 	end
 	

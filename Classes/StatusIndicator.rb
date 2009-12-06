@@ -16,12 +16,23 @@ class StatusIndicator
 	end
 	
 	def awakeFromNib
-	  @theItem.setMenu @menu #Set Menu. This should be posible in IB?
-		@theItem.setTitle "Loading..."
+		@theItem.setMenu @menu #Set Menu. This should be posible in IB?
+		show_inactive
 	end
 	
-	def change_status(state)
-	 @theItem.setTitle(state)
+	def show_no_project
+	 p "no projects"
+	 @menu.indexOfItem(no_project_item) > -1 || @menu.addItem(no_project_item)
+	 show_inactive
+	end
+	
+	def hide_no_project
+		p "some projects"
+		@menu.indexOfItem(no_project_item) > -1 && @menu.removeItem(no_project_item)
+	end
+	
+	def show_inactive
+		@theItem.setImage(status_image("icon-inactive.png"))
 	end
 	
 	def change_status(state, forProject:name)
@@ -31,6 +42,18 @@ class StatusIndicator
 		if menu_item
 			menu_item.state = state.include?('success') ? NSOnState : NSOffState
 		end
+	end
+	
+	def status_image(file_name)
+		bundle = NSBundle.mainBundle
+		image = bundle.pathForImageResource(file_name)
+		NSImage.alloc.initByReferencingFile(image)
+	end
+	
+	def no_project_item
+		 return @no_project_item if @no_project_item 
+		 @no_project_item = NSMenuItem.new
+	   @no_project_item.title = 'No Projects'
 	end
 	
 end

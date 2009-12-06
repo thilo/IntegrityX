@@ -18,6 +18,8 @@ class ConnectionDelegate
                                            error:nil)
 	  if doc
 			get_status(doc)
+		else
+		  p "No Data received"
 	  end
 	  @receivedData = NSMutableData.new
 	end

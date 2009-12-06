@@ -70,6 +70,8 @@ class ProjectsListDelegate
 	def add_menu_item(name)
 		project_item = NSMenuItem.new
 		project_item.title = name
+		project_item.setOnStateImage(status_image("icon-success.png"))
+		project_item.setOffStateImage(status_image("icon-failure.png"))
 		project_item.state = NSOnState
 		@menu.addItem(project_item)
 	end
@@ -91,5 +93,12 @@ class ProjectsListDelegate
 	def update_selected_projects
 		@settings["SelectedProjects"] = selected_projects
 	end
+	
+	def status_image(file_name)
+		bundle = NSBundle.mainBundle
+		image = bundle.pathForImageResource(file_name)
+		NSImage.alloc.initByReferencingFile(image)
+	end
+
 
 end

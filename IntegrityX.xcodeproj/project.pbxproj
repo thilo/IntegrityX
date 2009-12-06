@@ -14,6 +14,9 @@
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
 		B63361870FFC032B008DE3FE /* StatusIndicator.rb in Resources */ = {isa = PBXBuildFile; fileRef = B63361860FFC032B008DE3FE /* StatusIndicator.rb */; };
+		B64E8A4910CC09A4003D3F72 /* icon-failure.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4610CC09A4003D3F72 /* icon-failure.png */; };
+		B64E8A4A10CC09A4003D3F72 /* icon-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4710CC09A4003D3F72 /* icon-inactive.png */; };
+		B64E8A4B10CC09A4003D3F72 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4810CC09A4003D3F72 /* icon-success.png */; };
 		B65FA6F31077FC21009190C9 /* ProjectSettings.rb in Resources */ = {isa = PBXBuildFile; fileRef = B65FA6F21077FC21009190C9 /* ProjectSettings.rb */; };
 		B66F7569100BCABA00C0A1AA /* ProjectsListDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B66F7568100BCABA00C0A1AA /* ProjectsListDelegate.rb */; };
 		B66F75B6100BDBFA00C0A1AA /* ConnectionDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B66F75B5100BDBFA00C0A1AA /* ConnectionDelegate.rb */; };
@@ -34,6 +37,9 @@
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B63361860FFC032B008DE3FE /* StatusIndicator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = StatusIndicator.rb; sourceTree = "<group>"; };
 		B63362070FFC1516008DE3FE /* IntegrityX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrityX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B64E8A4610CC09A4003D3F72 /* icon-failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-failure.png"; sourceTree = "<group>"; };
+		B64E8A4710CC09A4003D3F72 /* icon-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-inactive.png"; sourceTree = "<group>"; };
+		B64E8A4810CC09A4003D3F72 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
 		B65FA6F21077FC21009190C9 /* ProjectSettings.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProjectSettings.rb; sourceTree = "<group>"; };
 		B66F7568100BCABA00C0A1AA /* ProjectsListDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProjectsListDelegate.rb; sourceTree = "<group>"; };
 		B66F75B5100BDBFA00C0A1AA /* ConnectionDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ConnectionDelegate.rb; sourceTree = "<group>"; };
@@ -105,6 +111,9 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B64E8A4610CC09A4003D3F72 /* icon-failure.png */,
+				B64E8A4710CC09A4003D3F72 /* icon-inactive.png */,
+				B64E8A4810CC09A4003D3F72 /* icon-success.png */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
@@ -186,6 +195,9 @@
 				B66F7569100BCABA00C0A1AA /* ProjectsListDelegate.rb in Resources */,
 				B66F75B6100BDBFA00C0A1AA /* ConnectionDelegate.rb in Resources */,
 				B65FA6F31077FC21009190C9 /* ProjectSettings.rb in Resources */,
+				B64E8A4910CC09A4003D3F72 /* icon-failure.png in Resources */,
+				B64E8A4A10CC09A4003D3F72 /* icon-inactive.png in Resources */,
+				B64E8A4B10CC09A4003D3F72 /* icon-success.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
