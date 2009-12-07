@@ -32,8 +32,8 @@ class MainDelegate
 			project_url_part = next_project
 			p "Request update from #{server_url_part + '/' + project_url_part}"
 			url = NSURL.URLWithString server_url_part + '/' + project_url_part
-			request = NSURLRequest.requestWithURL url
-			@connection = NSURLConnection.connectionWithRequest(request, delegate: @connection_delegate)
+			request = NSURLRequest.requestWithURL url, cachePolicy: NSURLRequestReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60.0
+			NSURLConnection.connectionWithRequest(request, delegate: @connection_delegate)
 			@status_indicator.hide_no_project
 		else
 			@status_indicator.show_no_project
