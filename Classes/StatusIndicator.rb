@@ -47,6 +47,8 @@ class StatusIndicator
 	def status_image(file_name)
 		bundle = NSBundle.mainBundle
 		image = bundle.pathForImageResource(file_name)
+		p bundle.bundlePath
+		p image
 		NSImage.alloc.initByReferencingFile(image)
 	end
 	

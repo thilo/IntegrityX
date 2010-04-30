@@ -29,10 +29,10 @@ class MainDelegate
 		
 		if @settings["ProjectUrl"] != nil && @settings["SelectedProjects"] != nil && !@settings["SelectedProjects"].empty?
 			server_url_part = @settings["ProjectUrl"] # e.g. "http://ci.atonie.org/irc-notifier"
-			project_url_part = next_project
+			project_url_part = project_url(next_project)
 			p "Request update from #{server_url_part + '/' + project_url_part}"
 			url = NSURL.URLWithString server_url_part + '/' + project_url_part
-			request = NSURLRequest.requestWithURL url, cachePolicy: NSURLRequestReloadIgnoringLocalAndRemoteCacheData, timeoutInterval: 60.0
+			request = NSMutableURLRequest.requestWithURL url
 			NSURLConnection.connectionWithRequest(request, delegate: @connection_delegate)
 			@status_indicator.hide_no_project
 		else
@@ -47,5 +47,9 @@ class MainDelegate
 		@current_index = @current_index + 1
 		
 		@settings["SelectedProjects"][project_index]
+	end
+	
+	def project_url(name)
+		name.gsub(/[^a-z0-9]+/i, '-').gsub(/-+/, '-').gsub(/-$/, '') 
 	end
 end

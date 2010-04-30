@@ -6,45 +6,130 @@
 	objectVersion = 44;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		172754BD107597F200D0347B /* Unit Tests */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */;
+			buildPhases = (
+				172754BC107597F200D0347B /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Unit Tests";
+			productName = "Unit Tests";
+		};
+		4D1A51A110A4FF5D0046A98A /* Compile */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D1A51AB10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Compile" */;
+			buildPhases = (
+				4D1A51A010A4FF5D0046A98A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Compile;
+			productName = Compile;
+		};
+		4D1A51A510A4FF640046A98A /* Embed */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4D1A51AC10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Embed" */;
+			buildPhases = (
+				4D1A51A410A4FF640046A98A /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Embed;
+			productName = Embed;
+		};
+		B6F6B7BF117E06B200244FBE /* Release */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B6F6B7CD117E06C800244FBE /* Build configuration list for PBXAggregateTarget "Release" */;
+			buildPhases = (
+			);
+			dependencies = (
+				B6F6B7C3117E06B800244FBE /* PBXTargetDependency */,
+				B6F6B7C5117E06BE00244FBE /* PBXTargetDependency */,
+			);
+			name = Release;
+			productName = Release;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
+		2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BFA9DA510CDF852007972A1 /* MainMenu.xib */; };
 		4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 4DE339F60D74FCDD00ADB6EE /* rb_main.rb */; };
 		4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE3BE130D8651D900ECA448 /* MacRuby.framework */; };
-		8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */ = {isa = PBXBuildFile; fileRef = 29B97318FDCFA39411CA2CEA /* MainMenu.nib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
-		B63361870FFC032B008DE3FE /* StatusIndicator.rb in Resources */ = {isa = PBXBuildFile; fileRef = B63361860FFC032B008DE3FE /* StatusIndicator.rb */; };
-		B64E8A4910CC09A4003D3F72 /* icon-failure.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4610CC09A4003D3F72 /* icon-failure.png */; };
-		B64E8A4A10CC09A4003D3F72 /* icon-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4710CC09A4003D3F72 /* icon-inactive.png */; };
-		B64E8A4B10CC09A4003D3F72 /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = B64E8A4810CC09A4003D3F72 /* icon-success.png */; };
-		B65FA6F31077FC21009190C9 /* ProjectSettings.rb in Resources */ = {isa = PBXBuildFile; fileRef = B65FA6F21077FC21009190C9 /* ProjectSettings.rb */; };
-		B66F7569100BCABA00C0A1AA /* ProjectsListDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B66F7568100BCABA00C0A1AA /* ProjectsListDelegate.rb */; };
-		B66F75B6100BDBFA00C0A1AA /* ConnectionDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B66F75B5100BDBFA00C0A1AA /* ConnectionDelegate.rb */; };
-		B6B6248D1005670400D53467 /* AvailableProjectsConnectionDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6B6248C1005670400D53467 /* AvailableProjectsConnectionDelegate.rb */; };
-		B6D2E5440FD4352800DB8663 /* MainDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6D2E5420FD4352800DB8663 /* MainDelegate.rb */; };
+		B66C1A8E117CF89F00EFFE9C /* AvailableProjectsConnectionDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E1117CEA1200CD2D19 /* AvailableProjectsConnectionDelegate.rb */; };
+		B66C1A8F117CF8A600EFFE9C /* ConnectionDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E2117CEA1200CD2D19 /* ConnectionDelegate.rb */; };
+		B66C1A9A117CF8BC00EFFE9C /* MainDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E3117CEA1200CD2D19 /* MainDelegate.rb */; };
+		B66C1A9B117CF8C200EFFE9C /* ProjectSettings.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E4117CEA1200CD2D19 /* ProjectSettings.rb */; };
+		B66C1A9C117CF8C900EFFE9C /* ProjectsListDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E5117CEA1200CD2D19 /* ProjectsListDelegate.rb */; };
+		B66C1A9D117CF8D100EFFE9C /* StatusIndicator.rb in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33E6117CEA1200CD2D19 /* StatusIndicator.rb */; };
+		B66C1B09117D059500EFFE9C /* icon-failure.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33FA117CEC0800CD2D19 /* icon-failure.png */; };
+		B66C1B0A117D059500EFFE9C /* icon-inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33FB117CEC0800CD2D19 /* icon-inactive.png */; };
+		B66C1B0B117D059500EFFE9C /* icon-success.png in Resources */ = {isa = PBXBuildFile; fileRef = B6BE33FC117CEC0800CD2D19 /* icon-success.png */; };
+		B6D34601117DB36000E17D87 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6D34600117DB36000E17D87 /* Sparkle.framework */; };
+		B6D3461B117DB3F300E17D87 /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B6D34600117DB36000E17D87 /* Sparkle.framework */; };
+		B6D34637117DBCED00E17D87 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = B6D34636117DBCED00E17D87 /* dsa_pub.pem */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6F6B7C2117E06B800244FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = IntegrityX;
+		};
+		B6F6B7C4117E06BE00244FBE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D1A51A510A4FF640046A98A;
+			remoteInfo = Embed;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		172754B4107597CF00D0347B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B6D3461B117DB3F300E17D87 /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
 		13E42FB307B3F0F600E4EEF1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = /System/Library/Frameworks/CoreData.framework; sourceTree = "<absolute>"; };
+		172754D5107598EA00D0347B /* stub_test.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = stub_test.rb; sourceTree = "<group>"; };
+		17D55CD81076A1A2008207BD /* run_suite.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = run_suite.rb; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		29B97319FDCFA39411CA2CEA /* English */ = {isa = PBXFileReference; lastKnownFileType = wrapper.nib; name = English; path = English.lproj/MainMenu.nib; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		2BFA9DA610CDF852007972A1 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DE339F60D74FCDD00ADB6EE /* rb_main.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		4DE3BE130D8651D900ECA448 /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B63361860FFC032B008DE3FE /* StatusIndicator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = StatusIndicator.rb; sourceTree = "<group>"; };
-		B63362070FFC1516008DE3FE /* IntegrityX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrityX.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		B64E8A4610CC09A4003D3F72 /* icon-failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-failure.png"; sourceTree = "<group>"; };
-		B64E8A4710CC09A4003D3F72 /* icon-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-inactive.png"; sourceTree = "<group>"; };
-		B64E8A4810CC09A4003D3F72 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
-		B65FA6F21077FC21009190C9 /* ProjectSettings.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProjectSettings.rb; sourceTree = "<group>"; };
-		B66F7568100BCABA00C0A1AA /* ProjectsListDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ProjectsListDelegate.rb; sourceTree = "<group>"; };
-		B66F75B5100BDBFA00C0A1AA /* ConnectionDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ConnectionDelegate.rb; sourceTree = "<group>"; };
-		B6B6248C1005670400D53467 /* AvailableProjectsConnectionDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = AvailableProjectsConnectionDelegate.rb; sourceTree = "<group>"; };
-		B6D2E5420FD4352800DB8663 /* MainDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = MainDelegate.rb; sourceTree = "<group>"; };
+		8D1107320486CEB800E47090 /* IntegrityX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntegrityX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6BE33E1117CEA1200CD2D19 /* AvailableProjectsConnectionDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = AvailableProjectsConnectionDelegate.rb; path = Classes/AvailableProjectsConnectionDelegate.rb; sourceTree = "<group>"; };
+		B6BE33E2117CEA1200CD2D19 /* ConnectionDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ConnectionDelegate.rb; path = Classes/ConnectionDelegate.rb; sourceTree = "<group>"; };
+		B6BE33E3117CEA1200CD2D19 /* MainDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = MainDelegate.rb; path = Classes/MainDelegate.rb; sourceTree = "<group>"; };
+		B6BE33E4117CEA1200CD2D19 /* ProjectSettings.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ProjectSettings.rb; path = Classes/ProjectSettings.rb; sourceTree = "<group>"; };
+		B6BE33E5117CEA1200CD2D19 /* ProjectsListDelegate.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = ProjectsListDelegate.rb; path = Classes/ProjectsListDelegate.rb; sourceTree = "<group>"; };
+		B6BE33E6117CEA1200CD2D19 /* StatusIndicator.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; name = StatusIndicator.rb; path = Classes/StatusIndicator.rb; sourceTree = "<group>"; };
+		B6BE33FA117CEC0800CD2D19 /* icon-failure.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-failure.png"; sourceTree = "<group>"; };
+		B6BE33FB117CEC0800CD2D19 /* icon-inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-inactive.png"; sourceTree = "<group>"; };
+		B6BE33FC117CEC0800CD2D19 /* icon-success.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-success.png"; sourceTree = "<group>"; };
+		B6D34600117DB36000E17D87 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		B6D34636117DBCED00E17D87 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,16 +139,30 @@
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
 				4DE3BE140D8651D900ECA448 /* MacRuby.framework in Frameworks */,
+				B6D34601117DB36000E17D87 /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6BE33E1117CEA1200CD2D19 /* AvailableProjectsConnectionDelegate.rb */,
+				B6BE33E2117CEA1200CD2D19 /* ConnectionDelegate.rb */,
+				B6BE33E3117CEA1200CD2D19 /* MainDelegate.rb */,
+				B6BE33E4117CEA1200CD2D19 /* ProjectSettings.rb */,
+				B6BE33E5117CEA1200CD2D19 /* ProjectsListDelegate.rb */,
+				B6BE33E6117CEA1200CD2D19 /* StatusIndicator.rb */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
+				B6D34600117DB36000E17D87 /* Sparkle.framework */,
 				4DE3BE130D8651D900ECA448 /* MacRuby.framework */,
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
 			);
@@ -73,16 +172,26 @@
 		1058C7A2FEA54F0111CA2CBB /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				29B97324FDCFA39411CA2CEA /* AppKit.framework */,
 				13E42FB307B3F0F600E4EEF1 /* CoreData.framework */,
 				29B97325FDCFA39411CA2CEA /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
 		};
+		172754AE1075979200D0347B /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				172754D5107598EA00D0347B /* stub_test.rb */,
+				17D55CD81076A1A2008207BD /* run_suite.rb */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B63362070FFC1516008DE3FE /* IntegrityX.app */,
+				8D1107320486CEB800E47090 /* IntegrityX.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,7 +199,8 @@
 		29B97314FDCFA39411CA2CEA /* IntegrityX */ = {
 			isa = PBXGroup;
 			children = (
-				B6D2E5410FD4352800DB8663 /* Classes */,
+				172754AE1075979200D0347B /* Tests */,
+				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
@@ -111,12 +221,13 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				B64E8A4610CC09A4003D3F72 /* icon-failure.png */,
-				B64E8A4710CC09A4003D3F72 /* icon-inactive.png */,
-				B64E8A4810CC09A4003D3F72 /* icon-success.png */,
+				B6D34636117DBCED00E17D87 /* dsa_pub.pem */,
+				B6BE33FA117CEC0800CD2D19 /* icon-failure.png */,
+				B6BE33FB117CEC0800CD2D19 /* icon-inactive.png */,
+				B6BE33FC117CEC0800CD2D19 /* icon-success.png */,
+				2BFA9DA510CDF852007972A1 /* MainMenu.xib */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
-				29B97318FDCFA39411CA2CEA /* MainMenu.nib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -130,19 +241,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		B6D2E5410FD4352800DB8663 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				B66F75B5100BDBFA00C0A1AA /* ConnectionDelegate.rb */,
-				B6D2E5420FD4352800DB8663 /* MainDelegate.rb */,
-				B63361860FFC032B008DE3FE /* StatusIndicator.rb */,
-				B6B6248C1005670400D53467 /* AvailableProjectsConnectionDelegate.rb */,
-				B66F7568100BCABA00C0A1AA /* ProjectsListDelegate.rb */,
-				B65FA6F21077FC21009190C9 /* ProjectSettings.rb */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +251,7 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
+				172754B4107597CF00D0347B /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -161,7 +260,7 @@
 			name = IntegrityX;
 			productInstallPath = "$(HOME)/Applications";
 			productName = IntegrityX;
-			productReference = B63362070FFC1516008DE3FE /* IntegrityX.app */;
+			productReference = 8D1107320486CEB800E47090 /* IntegrityX.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -169,6 +268,9 @@
 /* Begin PBXProject section */
 		29B97313FDCFA39411CA2CEA /* Project object */ = {
 			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Upstream-Agile GmbH";
+			};
 			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "IntegrityX" */;
 			compatibilityVersion = "Xcode 3.0";
 			hasScannedForEncodings = 1;
@@ -177,6 +279,10 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* IntegrityX */,
+				172754BD107597F200D0347B /* Unit Tests */,
+				4D1A51A110A4FF5D0046A98A /* Compile */,
+				4D1A51A510A4FF640046A98A /* Embed */,
+				B6F6B7BF117E06B200244FBE /* Release */,
 			);
 		};
 /* End PBXProject section */
@@ -186,22 +292,65 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D11072A0486CEB800E47090 /* MainMenu.nib in Resources */,
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				4DE339F70D74FCDD00ADB6EE /* rb_main.rb in Resources */,
-				B6D2E5440FD4352800DB8663 /* MainDelegate.rb in Resources */,
-				B63361870FFC032B008DE3FE /* StatusIndicator.rb in Resources */,
-				B6B6248D1005670400D53467 /* AvailableProjectsConnectionDelegate.rb in Resources */,
-				B66F7569100BCABA00C0A1AA /* ProjectsListDelegate.rb in Resources */,
-				B66F75B6100BDBFA00C0A1AA /* ConnectionDelegate.rb in Resources */,
-				B65FA6F31077FC21009190C9 /* ProjectSettings.rb in Resources */,
-				B64E8A4910CC09A4003D3F72 /* icon-failure.png in Resources */,
-				B64E8A4A10CC09A4003D3F72 /* icon-inactive.png in Resources */,
-				B64E8A4B10CC09A4003D3F72 /* icon-success.png in Resources */,
+				2BFA9DA710CDF852007972A1 /* MainMenu.xib in Resources */,
+				B66C1A8E117CF89F00EFFE9C /* AvailableProjectsConnectionDelegate.rb in Resources */,
+				B66C1A8F117CF8A600EFFE9C /* ConnectionDelegate.rb in Resources */,
+				B66C1A9A117CF8BC00EFFE9C /* MainDelegate.rb in Resources */,
+				B66C1A9B117CF8C200EFFE9C /* ProjectSettings.rb in Resources */,
+				B66C1A9C117CF8C900EFFE9C /* ProjectsListDelegate.rb in Resources */,
+				B66C1A9D117CF8D100EFFE9C /* StatusIndicator.rb in Resources */,
+				B66C1B09117D059500EFFE9C /* icon-failure.png in Resources */,
+				B66C1B0A117D059500EFFE9C /* icon-inactive.png in Resources */,
+				B66C1B0B117D059500EFFE9C /* icon-success.png in Resources */,
+				B6D34637117DBCED00E17D87 /* dsa_pub.pem in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		172754BC107597F200D0347B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/macruby Tests/run_suite.rb";
+		};
+		4D1A51A010A4FF5D0046A98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The macruby_deploy command-line tool with the --compile argument will compile every Ruby source file of your .app into machine code. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --compile \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
+		};
+		4D1A51A410A4FF640046A98A /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# The macruby_deploy command-line tool with the --embed argument will make sure the MacRuby framework will be embedded in your .app. Default options will be used. Pass the -h option to get more information.\nPATH=\"$PATH:/usr/local/bin\" macruby_deploy --embed --no-stdlib \"$TARGET_BUILD_DIR/$PROJECT_NAME.app\"";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		8D11072C0486CEB800E47090 /* Sources */ = {
@@ -214,6 +363,19 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		B6F6B7C3117E06B800244FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* IntegrityX */;
+			targetProxy = B6F6B7C2117E06B800244FBE /* PBXContainerItemProxy */;
+		};
+		B6F6B7C5117E06BE00244FBE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D1A51A510A4FF640046A98A /* Embed */;
+			targetProxy = B6F6B7C4117E06BE00244FBE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
@@ -223,21 +385,110 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		29B97318FDCFA39411CA2CEA /* MainMenu.nib */ = {
+		2BFA9DA510CDF852007972A1 /* MainMenu.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
-				29B97319FDCFA39411CA2CEA /* English */,
+				2BFA9DA610CDF852007972A1 /* English */,
 			);
-			name = MainMenu.nib;
+			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		172754BE107597F200D0347B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = "Unit Tests";
+			};
+			name = Debug;
+		};
+		172754BF107597F200D0347B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = "Unit Tests";
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4D1A51A210A4FF5D0046A98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Compile;
+			};
+			name = Debug;
+		};
+		4D1A51A310A4FF5D0046A98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Compile;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		4D1A51A610A4FF640046A98A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Embed;
+			};
+			name = Debug;
+		};
+		4D1A51A710A4FF640046A98A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Embed;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+		B6F6B7C0117E06B200244FBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Release;
+			};
+			name = Debug;
+		};
+		B6F6B7C1117E06B200244FBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Release;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_MODEL_TUNING = G5;
@@ -255,6 +506,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/build/Debug\"",
+					"\"$(SRCROOT)\"",
+				);
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = Info.plist;
@@ -267,6 +523,7 @@
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
@@ -278,17 +535,55 @@
 		C01FCF5008A954540054247B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				SDKROOT = "$(DEVELOPER_SDK_DIR)/MacOSX10.5.sdk";
+				SYMROOT = build;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		172754C7107597F400D0347B /* Build configuration list for PBXAggregateTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				172754BE107597F200D0347B /* Debug */,
+				172754BF107597F200D0347B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1A51AB10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Compile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1A51A210A4FF5D0046A98A /* Debug */,
+				4D1A51A310A4FF5D0046A98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D1A51AC10A4FF6A0046A98A /* Build configuration list for PBXAggregateTarget "Embed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1A51A610A4FF640046A98A /* Debug */,
+				4D1A51A710A4FF640046A98A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6F6B7CD117E06C800244FBE /* Build configuration list for PBXAggregateTarget "Release" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6F6B7C0117E06B200244FBE /* Debug */,
+				B6F6B7C1117E06B200244FBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "IntegrityX" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

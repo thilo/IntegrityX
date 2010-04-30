@@ -1,9 +1,9 @@
 //
 //  main.m
-//  ExceptionalX
+//  IntegrityX3
 //
-//  Created by Thilo on 9.10.08.
-//  Copyright __MyCompanyName__ 2008. All rights reserved.
+//  Created by Thilo on 19.4.10.
+//  Copyright Upstream - Lang & Utke GbR 2010. All rights reserved.
 //
 
 #import <MacRuby/MacRuby.h>

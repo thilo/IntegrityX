@@ -18,7 +18,7 @@ class AvailableProjectsConnectionDelegate
 			@settings["SelectedProjects"] = []
 			NSLog("Update Project List from #{@settings["ProjectUrl"]}")
 			url = NSURL.URLWithString @settings["ProjectUrl"] # "http://builder.integrityapp.com/irc-notifier"
-			request = NSURLRequest.requestWithURL url
+			request = NSMutableURLRequest.requestWithURL url
 			NSURLConnection.connectionWithRequest(request, delegate: self)
 		end
 	end
