@@ -3,3 +3,5 @@
 /appcast
 /build
 dsa_priv.pem
+IntegrityX.xcodeproj/*.pbxuser
+IntegrityX.xcodeproj/*.perspectivev3
