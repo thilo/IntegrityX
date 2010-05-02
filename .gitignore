@@ -1,2 +1,5 @@
 .DS_Store
 **/.DS_Store
+/appcast
+/build
+dsa_priv.pem
