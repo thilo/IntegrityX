@@ -4,11 +4,11 @@ class ProjectSettings
 	end
 	
 	def [](key)
-		@defaults.objectForKey key
+		@defaults[key]
 	end
 	
 	def []=(key,value)
-		@defaults.setObject value, forKey: key
+		@defaults[key]=value
 		value
 	end
 	

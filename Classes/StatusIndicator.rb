@@ -22,7 +22,9 @@ class StatusIndicator
 	
 	def show_no_project
 	 p "no projects"
+	 p @menu.indexOfItem(no_project_item)
 	 @menu.indexOfItem(no_project_item) > -1 || @menu.addItem(no_project_item)
+	 p @menu.indexOfItem(NSMenuItem.alloc.initWithTitle('No Projects', action:nil, keyEquivalent: ''))
 	 show_inactive
 	end
 	
@@ -47,15 +49,11 @@ class StatusIndicator
 	def status_image(file_name)
 		bundle = NSBundle.mainBundle
 		image = bundle.pathForImageResource(file_name)
-		p bundle.bundlePath
-		p image
 		NSImage.alloc.initByReferencingFile(image)
 	end
 	
 	def no_project_item
-		 return @no_project_item if @no_project_item 
-		 @no_project_item = NSMenuItem.new
-	   @no_project_item.title = 'No Projects'
+		 @no_project_item ||= NSMenuItem.alloc.initWithTitle('No Projects', action:nil, keyEquivalent: '')
 	end
 	
 end

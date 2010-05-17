@@ -83,11 +83,11 @@ class ProjectsListDelegate
 	end
   
   def remove_selected_project(name)
-    NSLog("remove #{name}")
+    p ("remove #{name}")
     selected_projects.delete(name)
 		update_selected_projects
 		remove_menu_item(name)
-		NSLog("Saved #{NSUserDefaults.standardUserDefaults.objectForKey("SelectedProjects")}")
+		p ("Saved #{NSUserDefaults.standardUserDefaults.objectForKey("SelectedProjects")}")
   end
 	
 	def update_selected_projects
